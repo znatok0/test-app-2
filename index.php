@@ -14,6 +14,7 @@
             <div class="container header">
                 <div class="row header-row">
                     <div class="image-holder">
+                        <?php echo"hello!";?>
                         <img class="header-image" src="/images/krmu-logo.jpg">
                     </div>
                 </div>
@@ -22,7 +23,7 @@
         <div class="container">
             <div class="test">
                 <center><form name="form1" action="create" method="post">
-                    <input type = "hidden" name = "_token" value = "">
+                    <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
                     <td>ФИО</td>
                     <td><input type='text' name='full_name' /></td>
                     <td>email</td>
