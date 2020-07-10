@@ -22,7 +22,7 @@
         <div class="container">
             <div class="test">
                 <center><form name="form1" action="create" method="post">
-                    <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
+                    <input type = "hidden" name = "_token" value = "">
                     <td>ФИО</td>
                     <td><input type='text' name='full_name' /></td>
                     <td>email</td>
