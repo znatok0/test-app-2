@@ -20,7 +20,7 @@ if(isset($_POST['insert_result'])) {
     if (empty($email)) { array_push($errors, "Заполните, пожалуйста, адрес электронной почты!"); }
     if (empty($iin)) { array_push($errors, "Заполните, пожалуйста, ИИН!"); }
 
-    $input_check_query = "SELECT * FROM results WHERE email='$email' OR iin='$iin' LIMIT 1";
+    $input_check_query = "SELECT * FROM result WHERE email='$email' OR iin='$iin' LIMIT 1";
     $finish = mysqli_query($db, $input_check_query);
     $res = mysqli_fetch_assoc($finish);
     if ($res) { // if user exists
