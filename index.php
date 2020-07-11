@@ -1,3 +1,4 @@
+<?php include('server.php');?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,7 +22,8 @@
         </header>
         <div class="container">
             <div class="test">
-                <center><form name="form1" action="/create" method="post">
+                <center><form name="form1" action="create.php" method="post">
+                    <?php include('errors.php'); ?>
                     <p>Ведутся технические работы!</p>
                     <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
                     <td>ФИО</td>
@@ -30,17 +32,6 @@
                     <td><input type='text' name='email' /></td>
                     <td>ИИН</td>
                     <td><input type='text' name='iin' /></td>
-                    <?php 
-                        if($errors->any()){
-                            echo '<div class="alert alert-danger">
-                                <ul>';
-                                    foreach ($errors->all() as $error){
-                                        echo '<li>{$error}</li>';
-                                    }
-                                echo '</ul>';
-                            echo '</div>';
-                        }
-                    ?>
                     <table border="1">
                         <tr><td align="center">N вопроса</td><td colspan="2" align="center">Варианты ответов</td></tr>
                         <tr><td colspan="3" align="center" class="oddTableRow">Предположим, что после соответствующего обучения вы сможете выполнять любую работу. Однако если бы вам пришлось выбрать только из двух возможностей, что бы вы предпочли?</td></tr>
@@ -224,7 +215,7 @@
                             <td align="center"><input id="20b" type="radio" name="20" value="20b"></td>
                             <td>Работать на клавишных машинах (пишущей машинке, телетайпе, наборной машине и др.)</td>
                         </tr>
-                        <tr><td colspan="3" align="center"><button onclick="sendResult()">Отправить</button></td></tr>
+                        <tr><td colspan="3" align="center"><button type="submit" class="btn" name="insert_result">Отправить</button></td></tr>
                             <script>
                                 var txt = document.getElementById('result-text');
                                 alert(txt.innerHTML);

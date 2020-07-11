@@ -173,5 +173,4 @@ function sendResult(){
     alert(result.toStringx1);
     var result_field = document.getElementById('result-text');
     result_field.innerHTML = result.toString;
-    
 }
