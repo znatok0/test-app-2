@@ -25,7 +25,7 @@
                 <center><form name="form1" action="create.php" method="post">
                     <?php include('errors.php'); ?>
                     <p>Ведутся технические работы!</p>
-                    <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
+                    
                     <td>ФИО</td>
                     <td><input type='text' name='full_name' /></td>
                     <td>email</td>
