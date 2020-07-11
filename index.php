@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Дифференциально-диагностический опросник</title>
@@ -22,14 +23,24 @@
             <div class="test">
                 <center><form name="form1" action="/create" method="post">
                     <p>Ведутся технические работы!</p>
-                    
+                    <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
                     <td>ФИО</td>
                     <td><input type='text' name='full_name' /></td>
                     <td>email</td>
                     <td><input type='text' name='email' /></td>
                     <td>ИИН</td>
                     <td><input type='text' name='iin' /></td>
-                    
+                    <?php 
+                        if($errors->any()){
+                            echo '<div class="alert alert-danger">
+                                <ul>';
+                                    foreach ($errors->all() as $error){
+                                        echo '<li>{$error}</li>';
+                                    }
+                                echo '</ul>';
+                            echo '</div>';
+                        }
+                    ?>
                     <table border="1">
                         <tr><td align="center">N вопроса</td><td colspan="2" align="center">Варианты ответов</td></tr>
                         <tr><td colspan="3" align="center" class="oddTableRow">Предположим, что после соответствующего обучения вы сможете выполнять любую работу. Однако если бы вам пришлось выбрать только из двух возможностей, что бы вы предпочли?</td></tr>
