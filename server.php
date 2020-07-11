@@ -7,7 +7,7 @@ session_start();
     $result = "";
     $errors = array();
 
-$db = mysqli_connect("127.0.0.1", "root", "chesscom123", "testapplication");
+$db = mysqli_connect("srv-pleskdb25.ps.kz:3306", "kaznumil_root", "Chesscom123!", "kaznumil_localdb");
 
 if(isset($_POST['insert_result'])) {
 
