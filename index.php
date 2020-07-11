@@ -22,7 +22,7 @@
         </header>
         <div class="container">
             <div class="test">
-                <center><form name="form1" action="create.php" method="post">
+                <center><form name="form1" action="server.php" method="post">
                     <?php include('errors.php'); ?>
                     <p>Ведутся технические работы!</p>
                     
