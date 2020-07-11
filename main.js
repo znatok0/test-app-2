@@ -1,4 +1,3 @@
-alert("Hello!");
 function sendResult(){
     var hn = 0;
     var ht = 0;
