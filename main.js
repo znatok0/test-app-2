@@ -170,7 +170,7 @@ function sendResult(){
     result.push(ha);
     result.push(hs);
     result.push(ht);
-    alert(result.toStringx1);
+    alert(result.toString);
     var result_field = document.getElementById('result-text');
     result_field.innerHTML = result.toString;
 }
