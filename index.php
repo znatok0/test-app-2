@@ -226,7 +226,7 @@
                 <script>
                     var btn = document.getElementById('btn-to-send');
                     btn.onclick() = function(){
-                        console.log('hello');
+                        alert('hello');
                         var hn = 0;
                         var ht = 0;
                         var hh = 0;
@@ -398,7 +398,6 @@
                         result.push(ha);
                         result.push(hs);
                         result.push(ht);
-                        alert(hn);
                         var result_field = document.getElementById('result-text');
                         result_field.innerHTML = result.toString;
                     }
