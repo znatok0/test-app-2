@@ -18,9 +18,9 @@ if ($result->num_rows > 0) {
     echo"<tr><td>ИИН</td><td>Имя абитуриента</td><td>Email</td><td>Человека-Природа</td><td>Человек-Человек</td>";
     echo"<td>Человек-художественный образ</td><td>Человек-знаковая техника</td><td>Человек-техника</td></tr>";
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$sql["iin"]."</td>"." "."<td>".$sql["full_name"]." ".$sql["email"]." ".
-        substr($sql["result"],0,1)." ".substr($sql["result"],1,1)." ".substr($sql["result"],2,1)." ".
-        substr($sql["result"],3,1)." ".substr($sql["result"],4,1)."</td></tr>";
+        echo "<tr><td>".$row["iin"]."</td>"." "."<td>".$row["full_name"]." ".$row["email"]." ".
+        substr($row["result"],0,1)." ".substr($row["result"],1,1)." ".substr($row["result"],2,1)." ".
+        substr($row["result"],3,1)." ".substr($row["result"],4,1)."</td></tr>";
     }
     echo "</table>";
   } else {
