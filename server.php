@@ -17,6 +17,9 @@ if(isset($_POST['insert_result'])) {
 
     if (empty($full_name)) { array_push($errors, "Заполните, пожалуйста, имя!"); }
     if (empty($email)) { array_push($errors, "Заполните, пожалуйста, адрес электронной почты!"); }
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailError = "Неверный формат электронной почты!";
+    }
     if (empty($iin)) { array_push($errors, "Заполните, пожалуйста, ИИН!"); }
 
     $input_check_query = "SELECT * FROM result WHERE email='$email' OR iin='$iin' LIMIT 1";
