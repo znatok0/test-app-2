@@ -219,10 +219,9 @@
                             <script>
                                 var btn = document.getElementById('btn-to-send');
                                 if(btn.clicked == true){
+                                    alert("hello");
                                     sendResult();
                                 }
-                                var txt = document.getElementById('result-text');
-                                alert(txt.innerHTML);
                             </script>
                     </table>
                     <p id="result-text"></p>
