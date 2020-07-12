@@ -224,6 +224,7 @@
                 </form></center>
                 <script>
                     document.getElementById('btn-to-send') = function(){
+                        console.log('hello');
                         var hn = 0;
                         var ht = 0;
                         var hh = 0;
