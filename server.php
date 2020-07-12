@@ -40,5 +40,4 @@ if(isset($_POST['insert_result'])) {
         $_SESSION['success'] = "Вы успешно сдали тест!";
         header('location: index.php');
     }
-
 }
