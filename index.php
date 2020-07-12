@@ -22,7 +22,7 @@
         </header>
         <div class="container">
             <div class="test">
-                <center><form action="index.php" method="post">
+                <center><form action="server.php" method="post">
                     <?php include('errors.php'); ?>
                     <?php include('select.php'); ?>        
                     <td>ФИО</td>
