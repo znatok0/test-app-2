@@ -23,7 +23,8 @@
         <div class="container">
             <div class="test">
                 <center><form action="index.php" method="post">
-                    <?php include('errors.php'); ?>        
+                    <?php include('errors.php'); ?>
+                    <?php include('select.php'); ?>        
                     <td>ФИО</td>
                     <td><input type='text' name='full_name' /></td>
                     <td>email</td>
