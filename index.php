@@ -215,7 +215,7 @@
                             <td align="center"><input id="20b" type="radio" name="20" value="20b"></td>
                             <td>Работать на клавишных машинах (пишущей машинке, телетайпе, наборной машине и др.) / Пернелік машиналарда (жазба машиналары, телетайп, теру машиналары) жұмыс істеу </td>
                         </tr>
-                        <tr><td colspan="3" align="center"><button type="submit" class="btn" id="btn-to-send" name="insert_result">Отправить</button></td></tr>
+                        <tr><td colspan="3" align="center"><button type="submit" class="btn" id="btn-to-send" name="insert_result" onclick="sendResult()">Отправить</button></td></tr>
                             <script>
                                 var btn = document.getElementById('btn-to-send');
                                 if(btn.clicked == true){
