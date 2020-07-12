@@ -1,7 +1,7 @@
 <?php include('server.php') ?>
 <html>
 <head>
-  <title>Registration system PHP and MySQL</title>
+  <title>Вход в систему</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>

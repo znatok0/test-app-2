@@ -54,9 +54,9 @@ if (isset($_POST['login_user'])) {
   if (empty($password)) {
   	array_push($errors, "Введите пароль!");
   }
-
+  
   if (count($errors) == 0) {
-  	$password = md5($password);
+  	// $password = md5($password);
   	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
