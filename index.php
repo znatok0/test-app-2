@@ -224,6 +224,7 @@
                     <p id="result-text"></p>
                 </form></center>
                 <script>
+                    alert("hello");
                     document.getElementById('btn-to-send') = function(){
                         console.log('hello');
                         var hn = 0;
