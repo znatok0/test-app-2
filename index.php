@@ -398,7 +398,7 @@
                         result.push(ha);
                         result.push(hs);
                         result.push(ht);
-                        alert(result.length);
+                        alert(hn);
                         var result_field = document.getElementById('result-text');
                         result_field.innerHTML = result.toString;
                     }
