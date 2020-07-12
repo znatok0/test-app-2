@@ -1,4 +1,5 @@
 <?php include('server.php') ?>
+<?php include('select.php'); ?> 
 <html>
 <head>
   <title>Registration system PHP and MySQL</title>
@@ -12,15 +13,15 @@
   <form method="post" action="login.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
-  		<label>Username</label>
+  		<label>Имя пользователя</label>
   		<input type="text" name="username" >
   	</div>
   	<div class="input-group">
-  		<label>Password</label>
+  		<label>Пароль</label>
   		<input type="password" name="password">
   	</div>
   	<div class="input-group">
-  		<button type="submit" class="btn" name="login_user">Login</button>
+  		<button type="submit" class="btn" name="login_user">Войти</button>
   	</div>
   </form>
 </body>

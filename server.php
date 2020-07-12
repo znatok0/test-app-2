@@ -43,3 +43,28 @@ if(isset($_POST['insert_result'])) {
         header('location: index.php');
     }
 }
+
+if (isset($_POST['login_user'])) {
+  $username = mysqli_real_escape_string($db, $_POST['username']);
+  $password = mysqli_real_escape_string($db, $_POST['password']);
+
+  if (empty($username)) {
+  	array_push($errors, "Введите имя пользователя!");
+  }
+  if (empty($password)) {
+  	array_push($errors, "Введите пароль!");
+  }
+
+  if (count($errors) == 0) {
+  	$password = md5($password);
+  	$query = "SELECT * FROM users WHERE user_name='$username' AND password='$password'";
+  	$results = mysqli_query($db, $query);
+  	if (mysqli_num_rows($results) == 1) {
+  	  $_SESSION['username'] = $username;
+  	  $_SESSION['success'] = "Вы успешно зашли в систем!";
+  	  header('location: analytics.php');
+  	}else {
+  		array_push($errors, "Логин или пароль неправильно введены!");
+  	}
+  }
+}
