@@ -20,8 +20,9 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc($sql)) {
         echo "<tr><td>".$sql["iin"]."</td>"." "."<td>".$sql["full_name"]." ".$sql["email"]." ".
         substr($sql["result"],0,1)." ".substr($sql["result"],1,1)." ".substr($sql["result"],2,1)." ".
-        substr($sql["result"],3,1)." ".substr($sql["result"],4,1);
+        substr($sql["result"],3,1)." ".substr($sql["result"],4,1)."</td></tr>";
     }
+    echo "</table>";
   } else {
     echo "0 results";
   }
