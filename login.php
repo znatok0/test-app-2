@@ -1,5 +1,4 @@
 <?php include('server.php') ?>
-<?php include('select.php'); ?> 
 <html>
 <head>
   <title>Registration system PHP and MySQL</title>
