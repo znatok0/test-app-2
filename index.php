@@ -31,6 +31,7 @@
                     <td><input type='text' name='email' /></td>
                     <td>ИИН</td>
                     <td><input type='text' name='iin' /></td>
+                    <td><a href="login.php">Войти</a></td>
                     <table border="1">
                         <tr><td align="center">N вопроса / Сұрақ N</td><td colspan="2" align="center">Варианты ответов / Жауап нұсқалары</td></tr>
                         <tr><td colspan="3" align="center" class="oddTableRow">Предположим, что после соответствующего обучения вы сможете выполнять любую работу. Однако если бы вам пришлось выбрать только из двух возможностей, что бы вы предпочли?
