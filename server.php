@@ -10,7 +10,6 @@ session_start();
 $db = mysqli_connect("srv-pleskdb25.ps.kz:3306", "kaznumil_root", "Chesscom123!", "kaznumil_localdb");
 
 if(isset($_POST['insert_result'])) {
-
     $full_name = mysqli_real_escape_string($db, $_POST['full_name']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $iin = mysqli_real_escape_string($db, $_POST['iin']);
@@ -33,7 +32,7 @@ if(isset($_POST['insert_result'])) {
     }
 
     if (count($errors) == 0) {  
-        $query = "INSERT INTO results (full_name, email, iin, result) 
+        $query = "INSERT INTO result (full_name, email, iin, result) 
                   VALUES('$full_name', '$email', '$iin', '$result')";
         mysqli_query($db, $query);
         $_SESSION['full_name'] = $full_name;
