@@ -218,9 +218,9 @@
                         <tr><td colspan="3" align="center"><button type="submit" class="btn" id="btn-to-send" name="insert_result">Отправить</button></td></tr>
                             <script>
                                 var btn = document.getElementById('btn-to-send');
-                                if(btn.attachEvent){
-                                    btn.attachEvent('onclick', sendResult());
-                                } 
+                                if(btn.clicked == true){
+                                    sendResult();
+                                }
                                 var txt = document.getElementById('result-text');
                                 alert(txt.innerHTML);
                             </script>
