@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="header">
-  	<h2>Login</h2>
+  	<h2>Вход в систему</h2>
   </div>
 	 
   <form method="post" action="login.php">

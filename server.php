@@ -61,10 +61,10 @@ if (isset($_POST['login_user'])) {
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
-  	  $_SESSION['success'] = "Вы успешно зашли в систем!";
+  	  $_SESSION['success'] = "Вы успешно вошли в систему!";
   	  header('location: analytics.php');
   	}else {
-  		array_push($errors, "Логин или пароль неправильно введены!");
+  		array_push($errors, "Логин или пароль введены неправильно!");
   	}
   }
 }
