@@ -23,6 +23,7 @@
         <div class="container">
             <div class="test">
                 <center><form action="index.php" method="post">
+                    <p>Просим абитуриентов не сдавать тесты! Все результаты будут удалены администрарором!</p>
                     <?php include('errors.php'); ?>       
                     <td>ФИО</td>
                     <td><input type='text' name='full_name' /></td>
