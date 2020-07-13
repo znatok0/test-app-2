@@ -15,130 +15,128 @@ if(isset($_POST['insert_result'])) {
     $iin = mysqli_real_escape_string($db, $_POST['iin']);
     $hn = $ht = $hh = $hs = $ha = 0;
     $results_array = array();
-    if(isset($_POST['insert_result'])){
-        $one = $_POST['1'];
-        $two = $_POST['2'];
-        $three = $_POST['3'];
-        $four = $_POST['4'];
-        $five = $_POST['5'];
-        $six = $_POST['6'];
-        $seven = $_POST['7'];
-        $eight = $_POST['8'];
-        $nine = $_POST['9'];
-        $ten = $_POST['10'];
-        $eleven = $_POST['11'];
-        $twelve = $_POST['12'];
-        $thirteen = $_POST['13'];
-        $fourteen  = $_POST['14'];
-        $fifteen = $_POST['15'];
-        $sixteen = $_POST['16'];
-        $seventeen = $_POST['17'];
-        $eighteen = $_POST['18'];
-        $nineteen = $_POST['19'];
-        $twenty = $_POST['20'];
-        if($one == "1a"){
-            $hh++;
-        } else{
-            $ht++;
-        }
-        if($two == "2a"){
-            $hh++;
-        } else{
-            $hs++;
-        }
-        if($three == "3a"){
-            $ha++;
-        } else{
-            $hn++;
-        }
-        if($four == "4a"){
-            $ht++;
-        } else{
-            $hh++;
-        }
-        if($five == "5a"){
-            $hs++;
-        } else{
-            $ha++;
-        }
-        if($six == "6a"){
-            $hn++;
-        } else{
-            $hh++;
-        }
-        if($seven == "7a"){
-            $ha++;
-        } else{
-            $ht++;
-        }
-        if($eight == "8a"){
-            $hh++;
-        } else{
-            $ha++;
-        }
-        if($nine == "9a"){
-            $ht++;
-        } else{
-            $hs++;
-        }
-        if($ten == "10a"){
-            $hn++;
-        } else{
-            $hs++;
-        }
-        if($eleven == "11a"){
-            $hn++;
-        } else{
-            $ht++;
-        }
-        if($twelve == "12a"){
-            $hh++;
-        } else{
-            $hs++;
-        }
-        if($thirteen == "13a"){
-            $ha++;
-        } else{
-            $hn++;
-        }
-        if($fourteen == "14a"){
-            $ht++;
-        } else{
-            $hh++;
-        }
-        if($fifteen == "15a"){
-            $hs++;
-        } else{
-            $ha++;
-        }
-        if($sixteen == "16a"){
-            $hn++;
-        }
-        else{
-            $hh++;
-        }
-        if($seventeen == "17a"){
-            $ha++;
-        } else{
-            $ht++;
-        }
-        if($eighteen == "18a"){
-            $hh++;
-        } else{
-            $ha++;
-        }
-        if($nineteen == "19a"){
-            $ht++;
-        } else{
-            $hs++;
-        }
-        if($twenty == "20a"){
-            $hn++;
-        } else{
-            $hs++;
-        }
-        array_push($results_array, $hn, $hh, $ha, $hs, $ht);
+    $one = $_POST['1'];
+    $two = $_POST['2'];
+    $three = $_POST['3'];
+    $four = $_POST['4'];
+    $five = $_POST['5'];
+    $six = $_POST['6'];
+    $seven = $_POST['7'];
+    $eight = $_POST['8'];
+    $nine = $_POST['9'];
+    $ten = $_POST['10'];
+    $eleven = $_POST['11'];
+    $twelve = $_POST['12'];
+    $thirteen = $_POST['13'];
+    $fourteen  = $_POST['14'];
+    $fifteen = $_POST['15'];
+    $sixteen = $_POST['16'];
+    $seventeen = $_POST['17'];
+    $eighteen = $_POST['18'];
+    $nineteen = $_POST['19'];
+    $twenty = $_POST['20'];
+    if($one == "1a"){
+        $hh++;
+    } else{
+        $ht++;
     }
+    if($two == "2a"){
+        $hh++;
+    } else{
+        $hs++;
+    }
+    if($three == "3a"){
+        $ha++;
+    } else{
+        $hn++;
+    }
+    if($four == "4a"){
+        $ht++;
+    } else{
+        $hh++;
+    }
+    if($five == "5a"){
+        $hs++;
+    } else{
+        $ha++;
+    }
+    if($six == "6a"){
+        $hn++;
+    } else{
+        $hh++;
+    }
+    if($seven == "7a"){
+        $ha++;
+    } else{
+        $ht++;
+    }
+    if($eight == "8a"){
+        $hh++;
+    } else{
+        $ha++;
+    }
+    if($nine == "9a"){
+        $ht++;
+    } else{
+        $hs++;
+    }
+    if($ten == "10a"){
+        $hn++;
+    } else{
+        $hs++;
+    }
+    if($eleven == "11a"){
+        $hn++;
+    } else{
+        $ht++;
+    }
+    if($twelve == "12a"){
+        $hh++;
+    } else{
+        $hs++;
+    }
+    if($thirteen == "13a"){
+        $ha++;
+    } else{
+        $hn++;
+    }
+    if($fourteen == "14a"){
+        $ht++;
+    } else{
+        $hh++;
+    }
+    if($fifteen == "15a"){
+        $hs++;
+    } else{
+        $ha++;
+    }
+    if($sixteen == "16a"){
+        $hn++;
+    }
+    else{
+        $hh++;
+    }
+    if($seventeen == "17a"){
+        $ha++;
+    } else{
+        $ht++;
+    }
+    if($eighteen == "18a"){
+        $hh++;
+    } else{
+        $ha++;
+    }
+    if($nineteen == "19a"){
+        $ht++;
+    } else{
+        $hs++;
+    }
+    if($twenty == "20a"){
+        $hn++;
+    } else{
+        $hs++;
+    }
+    array_push($results_array, $hn, $hh, $ha, $hs, $ht);
      
     $result = implode($results_array);
 
