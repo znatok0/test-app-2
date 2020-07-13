@@ -22,7 +22,6 @@
         </header>
         <div class="container">
             <div class="test">
-            <?php echo $_SESSION['success']; ?>
                 <center><form action="index.php" method="post">
                     <p>Просим абитуриентов не сдавать тесты! Все результаты будут удалены администратором!</p>
                     <?php include('errors.php'); ?>       
