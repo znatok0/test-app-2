@@ -22,6 +22,7 @@
         </header>
         <div class="container">
             <div class="test">
+            <?php echo $_SESSION['success']; ?>
                 <center><form action="index.php" method="post">
                     <p>Просим абитуриентов не сдавать тесты! Все результаты будут удалены администратором!</p>
                     <?php include('errors.php'); ?>       
@@ -216,7 +217,7 @@
                             <td align="center"><input id="20b" type="radio" name="20" value="20b"></td>
                             <td>Работать на клавишных машинах (пишущей машинке, телетайпе, наборной машине и др.) / Пернелік машиналарда (жазба машиналары, телетайп, теру машиналары) жұмыс істеу </td>
                         </tr>
-                        <tr><td colspan="3" align="center"><button type="submit" class="btn" id="send-button" name="insert_result">Отправить</button></td></tr>
+                        <tr><td colspan="3" align="center"><button type="submit" class="btn" name="insert_result">Отправить</button></td></tr>
                     </table>
                 </form></center>
                 </body>
