@@ -419,15 +419,10 @@
             </div>
         </div> -->
         <center><h1>Ведутся технические работы!</h1></center>
-        <footer>
+        <!-- <footer>
             <div class="container footer">
                 <div class="row">
                     <div class="col-md-4">
-                        <!-- {{-- <div class="footer-text-left">
-                            <p>Казахстанско-Российский</p><br>
-                            <p>Медицинский Университет</p><br>
-                            <p>Все права защищены</p>
-                        </div> --}} -->
                     </div>
                     <div class="col-md-4">
                         <div class="footer-image-holder">
@@ -438,6 +433,6 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </body>
 </html>
