@@ -13,8 +13,7 @@ if(isset($_POST['insert_result'])) {
     $full_name = mysqli_real_escape_string($db, $_POST['full_name']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $iin = mysqli_real_escape_string($db, $_POST['iin']);
-    include('index.php');
-    $result = implode($results_array);
+    $result = $_SESSION['res'];
 
     if (empty($full_name)) { array_push($errors, "Заполните, пожалуйста, имя!"); }
     if (empty($email)) { array_push($errors, "Заполните, пожалуйста, адрес электронной почты!"); }

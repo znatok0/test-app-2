@@ -1,4 +1,10 @@
 <?php include('server.php');?>
+<?php 
+
+    session_start();
+    $_SESSION['res'] = implode($results_array);
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -346,7 +352,6 @@
                             array_push($results_array, $hn, $hh, $ha, $hs, $ht);
                         }
                     ?>
-                    
                 </form></center>
                 </body>
                 </html>
