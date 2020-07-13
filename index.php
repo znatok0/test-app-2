@@ -20,7 +20,7 @@
                 </div>
             </div>
         </header>
-        <!-- <div class="container">
+        <!-- <!-- <div class="container"> -->
             <div class="test">
                 <center><form action="index.php" method="post">
                     <?php include('errors.php'); ?>       
@@ -418,8 +418,8 @@
                 </div>
             </div>
         </div> -->
-        <center><h1>Ведутся технические работы!</h1></center>
-        <!-- <footer>
+        <!-- <center><h1>Ведутся технические работы!</h1></center> -->
+        <footer>
             <div class="container footer">
                 <div class="row">
                     <div class="col-md-4">
@@ -433,6 +433,6 @@
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </body>
 </html>
