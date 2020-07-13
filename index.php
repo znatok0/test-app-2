@@ -22,14 +22,6 @@
         </header>
         <div class="container">
             <div class="test">
-                <center>
-                    <?php 
-                        if(isset($_SESSION['success']))
-                        {
-                            echo $_SESSION['success'];
-                        }
-                    ?>
-                </center>
                 <center><form action="index.php" method="post">
                     <p>Просим абитуриентов не сдавать тесты! Все результаты будут удалены администратором!</p>
                     <?php include('errors.php'); ?>       
