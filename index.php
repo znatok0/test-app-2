@@ -1,10 +1,4 @@
 <?php include('server.php');?>
-<?php 
-
-    session_start();
-    $_SESSION['res'] = implode($results_array);
-
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -351,6 +345,7 @@
                             }
                             array_push($results_array, $hn, $hh, $ha, $hs, $ht);
                         }
+                        echo "<input type='text' name='res' value='".implode($results_array)."'/>";
                     ?>
                 </form></center>
                 </body>
