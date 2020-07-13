@@ -32,6 +32,17 @@
                     <td>ИИН</td>
                     <td><input type='text' name='iin' /></td>
                     <td><a href="login.php">Войти</a></td>
+                    <?php 
+                        if(isset($_POST['insert_result'])){
+                            $one = $_POST['1'];
+                            if($one == "1a"){
+                                echo "1a";
+                            }
+                            else{
+                                echo "1b";
+                            }
+                        }
+                    ?>
                     <table border="1">
                         <tr><td align="center">N вопроса / Сұрақ N</td><td colspan="2" align="center">Варианты ответов / Жауап нұсқалары</td></tr>
                         <tr><td colspan="3" align="center" class="oddTableRow">Предположим, что после соответствующего обучения вы сможете выполнять любую работу. Однако если бы вам пришлось выбрать только из двух возможностей, что бы вы предпочли?
@@ -218,17 +229,7 @@
                         </tr>
                         <tr><td colspan="3" align="center"><button type="submit" class="btn" name="insert_result">Отправить</button></td></tr>
                     </table>
-                    <?php 
-                        if(isset($_POST['insert_result'])){
-                            $one = $_POST['1'];
-                            if($one == "1a"){
-                                echo "1a";
-                            }
-                            else{
-                                echo "1b";
-                            }
-                        }
-                    ?>
+                    
                 </form></center>
                 </body>
                 </html>
