@@ -216,7 +216,7 @@
                             <td align="center"><input id="20b" type="radio" name="20" value="20b"></td>
                             <td>Работать на клавишных машинах (пишущей машинке, телетайпе, наборной машине и др.) / Пернелік машиналарда (жазба машиналары, телетайп, теру машиналары) жұмыс істеу </td>
                         </tr>
-                        <tr><td colspan="3" align="center"><button type="submit" class="btn" name="insert_result">Отправить</button></td></tr>
+                        <tr><td colspan="3" align="center"><button type="submit" class="btn" id="send-button" name="insert_result">Отправить</button></td></tr>
                     </table>
                     <?php 
                         $hn = $ht = $hh = $hs = $ha = 0;
@@ -345,7 +345,7 @@
                             }
                             array_push($results_array, $hn, $hh, $ha, $hs, $ht);
                         }
-                        echo"<script type='text/javascript'>alert(".implode($results_array).");</script>";
+                        echo"<script type='text/javascript'>(document.getELementById('send-button')).onclick = function(){alert(".implode($results_array).");}</script>";
                         echo "<input type='text' name='res' value='".isset($results_array)?implode($results_array):"empty"."'/>";
                     ?>
                 </form></center>
