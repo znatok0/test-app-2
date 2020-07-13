@@ -4,6 +4,4 @@
   	  <p><?php echo $error ?></p>
   	<?php endforeach ?>
   </div>
-<?php else : ?>
-	<center><p>Поздравляем, вы успешно сдали тест!</p></center>
 <?php  endif ?>
