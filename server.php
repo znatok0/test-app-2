@@ -13,12 +13,7 @@ if(isset($_POST['insert_result'])) {
     $full_name = mysqli_real_escape_string($db, $_POST['full_name']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $iin = mysqli_real_escape_string($db, $_POST['iin']);
-    $one = rand(1,5);
-    $two = rand(1,5);
-    $three = rand(1,5);
-    $four = rand(1,5);
-    $five = rand(1,5);
-    $result = $one.$two.$three.$four.$five;
+    $result = mysqli_real_escape_string($db, $_POST['result']);
 
     if (empty($full_name)) { array_push($errors, "Заполните, пожалуйста, имя!"); }
     if (empty($email)) { array_push($errors, "Заполните, пожалуйста, адрес электронной почты!"); }
