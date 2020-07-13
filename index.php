@@ -346,7 +346,7 @@
                             array_push($results_array, $hn, $hh, $ha, $hs, $ht);
                         }
                     ?>
-                    <input type='text' name='result' style="display:none;" value="<?php echo(implode($results_array)); ?>"/>
+                    
                 </form></center>
                 </body>
                 </html>
