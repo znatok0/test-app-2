@@ -345,6 +345,7 @@
                             }
                             array_push($results_array, $hn, $hh, $ha, $hs, $ht);
                         }
+                        echo"<script type='text/javascript'>alert(".implode($results_array).");</script>";
                         echo "<input type='text' name='res' value='".isset($results_array)?implode($results_array):"empty"."'/>";
                     ?>
                 </form></center>
