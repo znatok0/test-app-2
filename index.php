@@ -20,7 +20,7 @@
                 </div>
             </div>
         </header>
-        <div class="container">
+        <!-- <div class="container">
             <div class="test">
                 <center><form action="index.php" method="post">
                     <?php include('errors.php'); ?>       
@@ -406,10 +406,8 @@
                 </html>
                 </td>
                     </tr>
-                        <!-- /content -->
                     <TR>
                         <TD valign="top" style="padding: 0 12px 0px 12px">
-                        <!-- news -->
                         <div style="padding: 0 12px 12px 8px" class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,tutby,gplus,lj,moikrug,yaru,evernote,friendfeed,linkedin,myspace,surfingbird,blogger,moimir,delicious,yazakladki"></div>
                         </TD>
                     </TR>
@@ -419,7 +417,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <center><h1>Ведутся технические работы!</h1></center>
         <footer>
             <div class="container footer">
                 <div class="row">
