@@ -59,6 +59,9 @@ a.main-page-link{
     padding: 10px;
     font-size: 20px;
 }
+a.main-page-link:hover{
+    text-decoration: none;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
