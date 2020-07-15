@@ -218,7 +218,7 @@
                         </tr>
                         <tr><td colspan="3" align="center"><button type="submit" class="btn" name="insert_result" style="font-size:15px; margin-top:5px; margin-bottom:5px;">Отправить</button></td></tr>
                     </table>
-                    <button id="myBtn">Open Modal</button>
+                    <!-- <button id="myBtn">Open Modal</button> -->
                     <div id="myModal" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
