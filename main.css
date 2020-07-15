@@ -52,6 +52,13 @@ div.footer-image-holder{
     padding-bottom:10px;
     margin:0 auto;
 }
+a.main-page-link{
+    border-color: red;
+    border-width: 2px;
+    border-style: double;
+    padding: 10px;
+    font-size: 20px;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

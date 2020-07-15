@@ -21,13 +21,13 @@
             </div>
         </header>
 
-        <div class="container">
+        <div class="container main-page">
             <div class="row">
                 <div class="col-md-6">
-                    <a href="test-form.php">Сдать тест</a>
+                    <a class="main-page-link" href="test-form.php">Сдать тест</a>
                 </div>
                 <div class="col-md-6">
-                    <a href="login.php">Вход для приемной комиссии</a>
+                    <a class="main-page-link" href="login.php">Вход для приемной комиссии</a>
                 </div>
             </div>
         </div>
