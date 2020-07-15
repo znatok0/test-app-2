@@ -17,15 +17,15 @@
 	 
   <form method="post" action="login.php">
   	<?php include('errors.php'); ?>
-  	<div class="input-group">
+  	<div class="input-group" style="margin:0 auto; margin-top:10%;">
   		<label>Имя пользователя</label>
   		<input type="text" name="username" >
   	</div>
-  	<div class="input-group">
+  	<div class="input-group" style="margin:0 auto;">
   		<label>Пароль</label>
   		<input type="password" name="password">
   	</div>
-  	<div class="input-group">
+  	<div class="input-group" style="margin:0 auto;">
   		<button type="submit" class="btn" name="login_user">Войти</button>
   	</div>
   </form>
