@@ -10,13 +10,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <script type="text/javascript" src="main.js"></script>
 </head>
-<body>
-  <div class="header">
-  	<h2>Вход в систему</h2>
-  </div>
-	 
+<body>	 
   <form method="post" action="login.php">
   	<?php include('errors.php'); ?>
+	<center><h2>Вход в систему</h2></center>
   	<div class="input-group" style="margin:0 auto; margin-top:10%;">
   		<label>Имя пользователя</label>
   		<input type="text" name="username" >
