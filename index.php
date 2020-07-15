@@ -23,7 +23,12 @@
 
         <div class="container">
             <div class="row">
-                <p>Hello!</p>
+                <div class="col-md-6">
+                    <a href="test-form.php">Сдать тест</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="login.php">Вход для приемной комиссии</a>
+                </div>
             </div>
         </div>
 
