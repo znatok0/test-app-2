@@ -218,6 +218,7 @@
                         </tr>
                         <tr><td colspan="3" align="center"><button type="submit" class="btn" id="myBtn" name="insert_result" style="font-size:15px;">Отправить</button></td></tr>
                     </table>
+                    <button id="myBtn">Open Modal</button>
                     <div id="myModal" class="modal">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -233,7 +234,6 @@
                             </div>
                         </div>
                     </div>
-                    <button id="myBtn">Open Modal</button>
                     <script>
                         // Get the modal
                         var modal = document.getElementById("myModal");
