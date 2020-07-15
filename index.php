@@ -28,7 +28,7 @@
                     <td>ФИО</td>
                     <td><input type='text' name='full_name' /></td>
                     <td>email</td>
-                    <td><input type='text' name='email' /></td>
+                    <td><input type='text' name='email' style="margin-bottom:10px;"/></td>
                     <td>ИИН</td>
                     <td><input type='text' name='iin' /></td>
                     <!-- <td><a href="login.php">Войти</a></td> -->
