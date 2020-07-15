@@ -13,8 +13,8 @@
 <body>	 
   <form method="post" action="login.php">
   	<?php include('errors.php'); ?>
-	<center><h2>Вход в систему</h2></center>
-  	<div class="input-group" style="margin:0 auto; margin-top:10%;">
+	<center><h2 style="margin-top:10%;">Вход в систему</h2></center>
+  	<div class="input-group" style="margin:0 auto;">
   		<label>Имя пользователя</label>
   		<input type="text" name="username" >
   	</div>
