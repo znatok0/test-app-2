@@ -20,10 +20,11 @@
             a.main-page-link:hover{
                 text-decoration: none;
             }
+
         </style>
     </head>
     <body>
-        <header>
+        <!-- <header>
             <div class="container header">
                 <div class="row header-row">
                     <div class="image-holder">
@@ -31,20 +32,20 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header> -->
 
         <div class="container main-page">
             <div class="row">
                 <div class="col-md-6">
-                    <a class="main-page-link" href="test-form.php">Сдать тест</a>
+                    <a class="main-page-link" href="test-form.php" style="float:right;">Сдать тест</a>
                 </div>
                 <div class="col-md-6">
-                    <a class="main-page-link" href="login.php">Вход для приемной комиссии</a>
+                    <a class="main-page-link" href="login.php" style="float:left;">Вход для приемной комиссии</a>
                 </div>
             </div>
         </div>
 
-        <footer>
+        <!-- <footer>
             <div class="container footer">
                 <div class="row">
                     <div class="col-md-4">
@@ -58,6 +59,6 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </body>
 </html>
