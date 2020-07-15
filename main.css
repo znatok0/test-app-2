@@ -3,9 +3,9 @@ img.header-image{
     width:400px;
     height:auto;
 }
-input[type="radio"]{
-    margin-left:2px;
-    margin-right:2px;
+input[type="radio"] {
+    padding-left:2px;
+    padding-right:2px;
 }
 div.container.header{
     padding:10px;
