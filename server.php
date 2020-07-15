@@ -6,6 +6,7 @@ session_start();
     $iin = "";
     $result = "";
     $errors = array();
+    $success = array();
 
 $db = mysqli_connect("srv-pleskdb25.ps.kz:3306", "kaznumil_root", "Chesscom123!", "kaznumil_localdb");
 
@@ -165,6 +166,7 @@ if(isset($_POST['insert_result'])) {
                   VALUES('$full_name', '$email', '$iin', '$result')";
         mysqli_query($db, $query);
         $_SESSION['full_name'] = $full_name;
+        array_push($success, "Вы успешно сдали тест!");
         $_SESSION['success'] = "Вы успешно сдали тест!";
         header('location: index.php');
     }
@@ -187,7 +189,7 @@ if (isset($_POST['login_user'])) {
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
-  	  $_SESSION['success'] = "Вы успешно вошли в систему!";
+        $_SESSION['success'] = "Вы успешно вошли в систему!";
   	  header('location: analytics.php');
   	}else {
   		array_push($errors, "Логин или пароль введены неправильно!");
