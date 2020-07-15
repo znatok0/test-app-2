@@ -62,6 +62,9 @@ a.main-page-link{
 a.main-page-link:hover{
     text-decoration: none;
 }
+a{
+    color:red;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
