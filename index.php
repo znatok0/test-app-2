@@ -21,7 +21,7 @@
                 text-decoration: none;
             }
             div.container.main-page{
-                margin-top:20%;
+                padding-top:20%;
             }
         </style>
     </head>
@@ -38,10 +38,10 @@
 
         <div class="container main-page">
             <div class="row">
-                <div class="col-md-6">
-                    <a class="main-page-link" href="test-form.php" style="float:right;">Сдать тест</a>
+                <div class="col-md-6 left-side">
+                    <a class="main-page-link" href="test-form.php" style="float:right;">Пройти тестирование</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 right-side">
                     <a class="main-page-link" href="login.php" style="float:left;">Приемная комиссия</a>
                 </div>
             </div>
