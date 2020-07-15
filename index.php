@@ -216,7 +216,7 @@
                             <td align="center"><input id="20b" type="radio" name="20" value="20b"></td>
                             <td>Работать на клавишных машинах (пишущей машинке, телетайпе, наборной машине и др.) / Пернелік машиналарда (жазба машиналары, телетайп, теру машиналары) жұмыс істеу </td>
                         </tr>
-                        <tr><td colspan="3" align="center"><button type="submit" class="btn" id="myBtn" name="insert_result" style="font-size:15px;">Отправить</button></td></tr>
+                        <tr><td colspan="3" align="center"><button type="submit" class="btn" name="insert_result" style="font-size:15px;">Отправить</button></td></tr>
                     </table>
                     <button id="myBtn">Open Modal</button>
                     <div id="myModal" class="modal">
