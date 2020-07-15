@@ -9,6 +9,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <script type="text/javascript" src="main.js"></script>
+        <style> 
+            a.main-page-link{
+                border-color: red;
+                border-width: 2px;
+                border-style: double;
+                padding: 10px;
+                font-size: 20px;
+            }
+            a.main-page-link:hover{
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
         <header>
