@@ -6,7 +6,6 @@ session_start();
     $iin = "";
     $result = "";
     $errors = array();
-    $success = array();
 
 $db = mysqli_connect("srv-pleskdb25.ps.kz:3306", "kaznumil_root", "Chesscom123!", "kaznumil_localdb");
 
@@ -163,10 +162,9 @@ if(isset($_POST['insert_result'])) {
 
     if (count($errors) == 0) {  
         $query = "INSERT INTO result (full_name, email, iin, result) 
-                  VALUES('$full_name', '$email', '$iin', '$result')";
+        VALUES('$full_name', '$email', '$iin', '$result')";
         mysqli_query($db, $query);
         $_SESSION['full_name'] = $full_name;
-        array_push($success, "Вы успешно сдали тест!");
         $_SESSION['success'] = "Вы успешно сдали тест!";
         header('location: index.php');
     }
