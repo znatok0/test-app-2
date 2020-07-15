@@ -305,10 +305,7 @@
                         </tr>
                         <tr><td colspan="3" align="center"><button type="submit" class="btn" id="myBtn" name="insert_result">Отправить</button></td></tr>
                     </table>
-                    <?php 
-                        if (isset($_SESSION['success'])) {
-                            echo "
-                                <script>
+                    <script>
                                 var modal = document.getElementById('myModal');
                                 var btn = document.getElementById('myBtn');
                                 var span = document.getElementsByClassName('close')[0];
@@ -323,10 +320,7 @@
                                     modal.style.display = 'none';
                                 }
                                 }
-                                </script>
-                            ";
-                        }
-                    ?>
+                    </script>
                 </form></center>
                 </body>
                 </html>
