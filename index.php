@@ -20,7 +20,9 @@
             a.main-page-link:hover{
                 text-decoration: none;
             }
-
+            div.container.main-page{
+                margin-top:20%;
+            }
         </style>
     </head>
     <body>
@@ -40,7 +42,7 @@
                     <a class="main-page-link" href="test-form.php" style="float:right;">Сдать тест</a>
                 </div>
                 <div class="col-md-6">
-                    <a class="main-page-link" href="login.php" style="float:left;">Вход для приемной комиссии</a>
+                    <a class="main-page-link" href="login.php" style="float:left;">Приемная комиссия</a>
                 </div>
             </div>
         </div>
