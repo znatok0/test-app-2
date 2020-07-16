@@ -13,8 +13,8 @@ $sql = "SELECT * FROM result";
 $result = $connection->query($sql);
 
   if ($result->num_rows > 0) {
-    echo "<center><p>Список абитуриентов, сдавших тест</p></center>";
-    echo "<table>";
+    echo "<center><p style='font-size:20px;'>Список абитуриентов, сдавших тест</p></center>";
+    echo "<table style='margin:0 auto;'>";
     while($row = $result->fetch_assoc()){
       echo "<tr>";
       echo "<td>ИИН:".$row["iin"]."</td>";
