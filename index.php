@@ -39,10 +39,10 @@
         <div class="container main-page">
             <div class="row">
                 <div class="col-md-6 left-side">
-                    <a class="main-page-link" href="test-form.php" style="float:right;">Пройти тестирование</a>
+                    <a class="main-page-link" href="test-form.php" style="float:right;">Тест для абитуриентов</a>
                 </div>
                 <div class="col-md-6 right-side">
-                    <a class="main-page-link" href="login.php" style="float:left;">Приемная комиссия</a>
+                    <a class="main-page-link" href="login.php" style="float:left;">Вход для приемной комиссии</a>
                 </div>
             </div>
         </div>
