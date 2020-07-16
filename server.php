@@ -166,7 +166,7 @@ if(isset($_POST['insert_result'])) {
         mysqli_query($db, $query);
         $_SESSION['full_name'] = $full_name;
         $_SESSION['success'] = "Вы успешно сдали тест!";
-        header('location: index.php');
+        header('location: test-form.php');
     }
 }
 
