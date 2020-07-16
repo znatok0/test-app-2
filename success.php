@@ -12,10 +12,10 @@
         <style>
             div.success-form{
                 margin-top:10%;
-                margin:0 auto;
             }
             p.success-p{
                 font-size:20px;
+                margin:0 auto;
             }
         </style>
     </head>
