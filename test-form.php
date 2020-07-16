@@ -23,7 +23,7 @@
         </header>
         <div class="container">
             <div class="test">
-                <center><form action="index.php" method="post">
+                <center><form action="test-form.php" method="post">
                     <?php include('errors.php'); ?>       
                     <td>ФИО</td>
                     <td><input type='text' name='full_name' /></td>
