@@ -12,13 +12,26 @@ if ($connection->connect_error) {
 $sql = "SELECT * FROM result";
 $result = $connection->query($sql);
 
-if ($result->num_rows > 0) {
-    echo "<p>Список абитуриентов, сдавших тест</p>";
-    while($row = $result->fetch_assoc()) {
-        echo "<p>ИИН:".$row["iin"]." "."ФИО:".$row["full_name"]." "."Человека-Природа:".substr($row["result"],0,1)." ".
-        "Человек-Человек:".substr($row["result"],1,1)." "."Человек-художественный образ:".substr($row["result"],2,1)." ".
-        "Человек-знаковая техника:".substr($row["result"],3,1)." "."Человек-техника:".substr($row["result"],4,1);
+  if ($result->num_rows > 0) {
+    echo "<center><p>Список абитуриентов, сдавших тест</p></center>";
+    echo "<table>";
+    while($row = $result->fetch_assoc()){
+      echo "<tr>";
+      echo "<td>ИИН:".$row["iin"]."</td>";
+      echo "<td>ФИО:".$row["full_name"]."</td>";
+      echo "<td>Человека-Природа:".substr($row["result"],0,1)."</td>";
+      echo "<td>Человека-Человек:".substr($row["result"],1,1)."</td>";
+      echo "<td>Человека-художественный образ:".substr($row["result"],2,1)."</td>";
+      echo "<td>Человека-знаковая техника:".substr($row["result"],3,1)."</td>";
+      echo "<td>Человека-техника:".substr($row["result"],4,1)."</td>";
+      echo "</tr>";
     }
+    echo "</table>";
+    // while($row = $result->fetch_assoc()) {
+    //     echo "<p>ИИН:".$row["iin"]." "."ФИО:".$row["full_name"]." "."Человека-Природа:".substr($row["result"],0,1)." ".
+    //     "Человек-Человек:".substr($row["result"],1,1)." "."Человек-художественный образ:".substr($row["result"],2,1)." ".
+    //     "Человек-знаковая техника:".substr($row["result"],3,1)." "."Человек-техника:".substr($row["result"],4,1);
+    // }
   } else {
     echo "0 results";
   }
