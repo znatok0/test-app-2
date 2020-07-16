@@ -15,13 +15,12 @@
             }
             p.success-p{
                 font-size:20px;
-                margin:0 auto;
             }
         </style>
     </head>
     <body>
         <div class="success-form">
-            <p class="success-p">Ваш ответ успешно сохранен!</p>
+            <center><p class="success-p">Ваш ответ успешно сохранен!</p></center>
         </div>
     </body>
 </html>
