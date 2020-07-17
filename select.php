@@ -17,6 +17,7 @@ $result = $connection->query($sql);
     echo "<table style='margin:0 auto;'>";
     while($row = $result->fetch_assoc()){
       echo "<tr>";
+      echo "<td>ID:".$row["id"]."</td>";
       echo "<td>ИИН:".$row["iin"]."</td>";
       echo "<td>ФИО:".$row["full_name"]."</td>";
       echo "<td>Человека-Природа:".substr($row["result"],0,1)."</td>";
