@@ -10,6 +10,21 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <script type="text/javascript" src="main.js"></script>
     </head>
+    <script type='text/javascript'>
+      $(document).ready(function() {
+      jQuery('#Export to excel').bind('click', function() {
+      var target = $(this).attr('id');
+      switch(target) {
+        case 'export-to-excel' :
+        $('#hidden-type').val(target);
+        //alert($('#hidden-type').val());
+        $('#export-form').submit();
+        $('#hidden-type').val('');
+        break
+      }
+      });
+          });
+    </script>
 </html>
 <?php include('server.php'); ?>
 <?php include('select.php'); ?> 
