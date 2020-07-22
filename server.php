@@ -13,6 +13,7 @@ if(isset($_POST['insert_result'])) {
     $full_name = mysqli_real_escape_string($db, $_POST['full_name']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $iin = mysqli_real_escape_string($db, $_POST['iin']);
+    $ikt = mysqli_real_escape_string($db, $_POST['ikt']);
     $hn = $ht = $hh = $hs = $ha = 0;
     $results_array = array();
     $one = $_POST['1'];
@@ -146,6 +147,7 @@ if(isset($_POST['insert_result'])) {
       $emailError = "Неверный формат электронной почты!";
     }
     if (empty($iin)) { array_push($errors, "Заполните, пожалуйста, ИИН!"); }
+    if (empty($iле)) { array_push($errors, "Заполните, пожалуйста, данные ИКТ!"); }
     if(($hn+$hh+$ha+$hs+$ht)!=20){ array_push($errors, "Вы не ответили на все вопросы!"); }
 
     $input_check_query = "SELECT * FROM result WHERE email='$email' OR iin='$iin' LIMIT 1";
@@ -161,8 +163,8 @@ if(isset($_POST['insert_result'])) {
     }
 
     if (count($errors) == 0) {  
-        $query = "INSERT INTO result (full_name, email, iin, result) 
-        VALUES('$full_name', '$email', '$iin', '$result')";
+        $query = "INSERT INTO result (full_name, email, iin, result, ikt) 
+        VALUES('$full_name', '$email', '$iin', '$result', '$ikt')";
         mysqli_query($db, $query);
         $_SESSION['full_name'] = $full_name;
         $_SESSION['success'] = "Вы успешно сдали тест!";

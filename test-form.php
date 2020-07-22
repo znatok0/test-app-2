@@ -31,6 +31,8 @@
                     <td><input type='text' name='email' style="margin-bottom:10px;"/></td>
                     <td>ИИН</td>
                     <td><input type='text' name='iin' /></td>
+                    <td>ИКТ</td>
+                    <td><input type='text' name='ikt' /></td>
                     <!-- <td><a href="login.php">Войти</a></td> -->
                     <table border="1">
                         <tr><td align="center">N вопроса / Сұрақ N</td><td colspan="2" align="center">Варианты ответов / Жауап нұсқалары</td></tr>
