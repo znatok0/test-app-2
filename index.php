@@ -24,7 +24,8 @@
                 padding-top:10%;
             }
             div.notif{
-                margin-top:10%;
+                padding-top:10%;
+                margin:0 auto;
                 width:80%;
             }
         </style>
