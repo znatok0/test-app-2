@@ -1,5 +1,3 @@
-<?php include('server.php'); ?>
-<?php include('select.php'); ?> 
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,3 +11,5 @@
         <script type="text/javascript" src="main.js"></script>
     </head>
 </html>
+<?php include('server.php'); ?>
+<?php include('select.php'); ?> 
