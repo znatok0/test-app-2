@@ -39,7 +39,8 @@ $result = $connection->query($sql);
   }
 
   echo "
-    <script  type='text/javascript'>
+    alert('hello!');
+    <script type='text/javascript'>
       $(document).ready(function() {
       jQuery('#Export to excel').bind('click', function() {
       var target = $(this).attr('id');
