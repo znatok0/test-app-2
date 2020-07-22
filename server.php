@@ -147,7 +147,7 @@ if(isset($_POST['insert_result'])) {
       $emailError = "Неверный формат электронной почты!";
     }
     if (empty($iin)) { array_push($errors, "Заполните, пожалуйста, ИИН!"); }
-    if (empty($iле)) { array_push($errors, "Заполните, пожалуйста, данные ИКТ!"); }
+    if (empty($ikt)) { array_push($errors, "Заполните, пожалуйста, данные ИКТ!"); }
     if(($hn+$hh+$ha+$hs+$ht)!=20){ array_push($errors, "Вы не ответили на все вопросы!"); }
 
     $input_check_query = "SELECT * FROM result WHERE email='$email' OR iin='$iin' LIMIT 1";
