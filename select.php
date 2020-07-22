@@ -25,6 +25,7 @@ $result = $connection->query($sql);
       echo "<td>Человека-художественный образ:".substr($row["result"],2,1)."</td>";
       echo "<td>Человека-знаковая техника:".substr($row["result"],3,1)."</td>";
       echo "<td>Человека-техника:".substr($row["result"],4,1)."</td>";
+      echo "<td>ИКТ:".$row["ikt"]."</td>";
       echo "</tr>";
     }
     echo "</table>";
