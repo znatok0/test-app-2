@@ -39,6 +39,20 @@ $result = $connection->query($sql);
   }
 
   echo "
-    alert('hello!');
-    
+    <script type='text/javascript'>
+      alert('hello!');
+      $(document).ready(function() {
+      jQuery('#Export to excel').bind('click', function() {
+      var target = $(this).attr('id');
+      switch(target) {
+        case 'export-to-excel' :
+        $('#hidden-type').val(target);
+        //alert($('#hidden-type').val());
+        $('#export-form').submit();
+        $('#hidden-type').val('');
+        break
+      }
+      });
+          });
+    </script>
   ";

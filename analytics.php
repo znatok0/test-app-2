@@ -13,18 +13,3 @@
 </html>
 <?php include('server.php'); ?>
 <?php include('select.php'); ?> 
-<script type='text/javascript'>
-      $(document).ready(function() {
-      jQuery('#Export to excel').bind('click', function() {
-      var target = $(this).attr('id');
-      switch(target) {
-        case 'export-to-excel' :
-        $('#hidden-type').val(target);
-        //alert($('#hidden-type').val());
-        $('#export-form').submit();
-        $('#hidden-type').val('');
-        break
-      }
-      });
-          });
-</script>
