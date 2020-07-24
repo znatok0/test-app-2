@@ -29,6 +29,17 @@
             <input type='submit' name='export' value='CSV Export'>
         </form>
         <table>
+            <tr>
+                <th>ID</th>
+                <th>ИИН</th>
+                <th>ФИО</th>
+                <th>Человек-Природа</th>
+                <th>Человек-Человек</th>
+                <th>Человек-художественный образ</th>
+                <th>Человек-знаковая система</th>
+                <th>Человек-техника</th>
+                <th>ИКТ</th>
+            </tr>
         <?php
             // if ($result->num_rows > 0) {
             //     echo "<center><p style='font-size:20px;'>Список абитуриентов, сдавших тест</p></center>";
@@ -52,17 +63,7 @@
             // }
             while($row = mysqli_fetch_array($result)){
         ?>
-        <tr>
-            <th>ID</th>
-            <th>ИИН</th>
-            <th>ФИО</th>
-            <th>Человек-Природа</th>
-            <th>Человек-Человек</th>
-            <th>Человек-художественный образ</th>
-            <th>Человек-знаковая система</th>
-            <th>Человек-техника</th>
-            <th>ИКТ</th>
-        </tr>
+       
         <tr>
             <td><?php echo $row["id"]; ?></td>
             <td><?php echo $row["iin"]; ?></td>
