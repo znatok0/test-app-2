@@ -1,5 +1,6 @@
 <?php 
 if(isset($_POST["excel"])){
+    die('hello!');
     $servername = "srv-pleskdb25.ps.kz:3306";
     $username = "kaznumil_root";
     $password = "Chesscom123!";
