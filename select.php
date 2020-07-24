@@ -36,21 +36,3 @@ $result = $connection->query($sql);
   } else {
     echo "0 results";
   }
-
-  echo "
-    <script type='text/javascript'>
-      $(document).ready(function() {
-      jQuery('#Export to excel').bind('click', function() {
-      var target = $(this).attr('id');
-      switch(target) {
-        case 'export-to-excel' :
-        $('#hidden-type').val(target);
-        //alert($('#hidden-type').val());
-        $('#export-form').submit();
-        $('#hidden-type').val('');
-        break
-      }
-      });
-          });
-    </script>
-  ";
