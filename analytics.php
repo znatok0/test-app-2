@@ -28,7 +28,7 @@
         <form method='post' action='excel.php'>
             <input type='submit' name='export' value='CSV Export'>
         </form>
-        <table>
+        <table style="margin:0 auto;">
             <tr>
                 <th>ID</th>
                 <th>ИИН</th>
