@@ -1,3 +1,17 @@
+<?php
+    $servername = "srv-pleskdb25.ps.kz:3306";
+    $username = "kaznumil_root";
+    $password = "Chesscom123!";
+    $dbname = "kaznumil_localdb";
+
+    $connection = new mysqli($servername, $username, $password, $dbname);
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }
+
+    $sql = "SELECT * FROM result";
+    $result = $connection->query($sql);
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,25 +24,11 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <script type="text/javascript" src="main.js"></script>
     </head>
-    <body>
-        <?php 
-            $servername = "srv-pleskdb25.ps.kz:3306";
-            $username = "kaznumil_root";
-            $password = "Chesscom123!";
-            $dbname = "kaznumil_localdb";
-
-            $connection = new mysqli($servername, $username, $password, $dbname);
-            if ($connection->connect_error) {
-                die("Connection failed: " . $connection->connect_error);
-            }
-
-            $sql = "SELECT * FROM result";
-            $result = $connection->query($sql);
-            
-            echo "<form method='post' action='excel.php'>";
-            echo "<input type='submit' name='export' value='CSV Export'";
-            echo "</form>";
-
+    <body>    
+        <form method='post' action='excel.php'>
+            <input type='submit' name='export' value='CSV Export'>
+        </form>
+        <?php
             if ($result->num_rows > 0) {
                 echo "<center><p style='font-size:20px;'>Список абитуриентов, сдавших тест</p></center>";
                 echo "<table style='margin:0 auto;'>";
