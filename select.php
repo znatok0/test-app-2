@@ -12,9 +12,8 @@ if ($connection->connect_error) {
 $sql = "SELECT * FROM result";
 $result = $connection->query($sql);
   
-  echo "<div><a href='javascript:void(0)' id='export-to-excel'>Export to excel</a></div>";
-  echo "<form action='".$_SERVER['PHP_SELF']."' method='post' id='export-form'>";
-  echo "<input type='hidden' value='' id='hidden-type' name='ExportType'/>";
+  echo "<form method='post' action='excel.php'>";
+  echo "<input type='submit' name='export' value='CSV Export'";
   echo "</form>";
 
   if ($result->num_rows > 0) {
@@ -40,7 +39,6 @@ $result = $connection->query($sql);
 
   echo "
     <script type='text/javascript'>
-      alert('hello!');
       $(document).ready(function() {
       jQuery('#Export to excel').bind('click', function() {
       var target = $(this).attr('id');
