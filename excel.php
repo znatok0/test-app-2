@@ -13,7 +13,7 @@ if(isset($_POST["excel"])){
     header('Content-Disposition: attachment; filename=data.csv');
     $output = fopen('php://output','w');
     fputcsv($output, array("ФИО", "Адрес эл. почты", "ИИН", "ИКТ"));
-    $query = "SELECT * FROM result ORDER BY DESC id";
+    $query = "SELECT * FROM result ORDER BY id DESC";
     $result = $connection->query($query);
     while($row = mysqli_fetch_assoc($result))
     {
