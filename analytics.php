@@ -26,7 +26,7 @@
     </head>
     <body>    
         <form method='post' action='excel.php'>
-            <input type='submit' name='excel' value='Экспортировать в Excel' style="margin-top:1%; margin-left:4%;" />
+            <input type='submit' name='excel' value='Экспортировать в Excel' style="margin: 1% 4% 1%;" />
         </form>
         <table style="margin:0 auto;">
             <tr>
