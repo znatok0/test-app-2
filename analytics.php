@@ -28,6 +28,7 @@
         <form method='post' action='excel.php'>
             <input type='submit' name='export' value='CSV Export'>
         </form>
+        <table>
         <?php
             // if ($result->num_rows > 0) {
             //     echo "<center><p style='font-size:20px;'>Список абитуриентов, сдавших тест</p></center>";
@@ -63,5 +64,6 @@
             <td><?php echo $row["ikt"]; ?></td>
         </tr>
         <?php } ?>
+        </table>
     </body>
 </html>
