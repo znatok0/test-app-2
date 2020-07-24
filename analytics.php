@@ -33,11 +33,11 @@
                 <th>ID</th>
                 <th>ИИН</th>
                 <th>ФИО</th>
-                <th>Человек-Природа</th>
-                <th>Человек-Человек</th>
-                <th>Человек-художественный образ</th>
-                <th>Человек-знаковая система</th>
-                <th>Человек-техника</th>
+                <th padding-right:5px;>Человек-Природа</th>
+                <th padding-right:5px;>Человек-Человек</th>
+                <th padding-right:5px;>Человек-художественный образ</th>
+                <th padding-right:5px;>Человек-знаковая система</th>
+                <th padding-right:5px;>Человек-техника</th>
                 <th>ИКТ</th>
             </tr>
         <?php
@@ -65,7 +65,7 @@
         ?>
        
         <tr>
-            <td><?php echo $row["id"]; ?></td>
+            <td style="padding-right:5px;"><?php echo $row["id"]; ?></td>
             <td><?php echo $row["iin"]; ?></td>
             <td><?php echo $row["full_name"]; ?></td>
             <td><?php echo substr($row["result"],0,1); ?></td>
