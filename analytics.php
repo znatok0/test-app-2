@@ -9,7 +9,7 @@
         die("Connection failed: " . $connection->connect_error);
     }
 
-    $sql = "SELECT * FROM result";
+    $sql = "SELECT * FROM result ORDER BY id DESC";
     $result = $connection->query($sql);
 ?>
 <!DOCTYPE html>
