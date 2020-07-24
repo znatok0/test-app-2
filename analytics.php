@@ -28,7 +28,7 @@
         <form method='post' action='excel.php'>
             <input type='submit' name='excel' value='Экспортировать в Excel' style="margin: 1% 4% 1%;" />
         </form>
-        <table style="margin:0 auto;">
+        <!-- <table style="margin:0 auto;">
             <tr>
                 <th>ID</th>
                 <th>ИИН</th>
@@ -39,43 +39,31 @@
                 <th style="padding-right:5px;">Человек-знаковая система</th>
                 <th style="padding-right:5px;">Человек-техника</th>
                 <th>ИКТ</th>
-            </tr>
+            </tr> -->
         <?php
-            // if ($result->num_rows > 0) {
-            //     echo "<center><p style='font-size:20px;'>Список абитуриентов, сдавших тест</p></center>";
-            //     echo "<table style='margin:0 auto;'>";
-            //     while($row = $result->fetch_assoc()){
-            //     echo "<tr>";
-            //     echo "<td>ID:".$row["id"]."</td>";
-            //     echo "<td>ИИН:".$row["iin"]."</td>";
-            //     echo "<td>ФИО:".$row["full_name"]."</td>";
-            //     echo "<td>Человек-Природа:".substr($row["result"],0,1)."</td>";
-            //     echo "<td>Человек-Человек:".substr($row["result"],1,1)."</td>";
-            //     echo "<td>Человек-художественный образ:".substr($row["result"],2,1)."</td>";
-            //     echo "<td>Человек-знаковая система:".substr($row["result"],3,1)."</td>";
-            //     echo "<td>Человек-техника:".substr($row["result"],4,1)."</td>";
-            //     echo "<td>ИКТ:".$row["ikt"]."</td>";
-            //     echo "</tr>";
-            //     }
-            //     echo "</table>";
-            // } else {
-            //     echo "0 results";
-            // }
-            while($row = mysqli_fetch_array($result)){
+            if ($result->num_rows > 0) {
+                echo "<center><p style='font-size:20px;'>Список абитуриентов, сдавших тест</p></center>";
+                echo "<table style='margin:0 auto;'>";
+                while($row = $result->fetch_assoc()){
+                echo "<tr>";
+                echo "<td>ID:".$row["id"]."</td>";
+                echo "<td>ИИН:".$row["iin"]."</td>";
+                echo "<td>ФИО:".$row["full_name"]."</td>";
+                echo "<td>Человек-Природа:".substr($row["result"],0,1)."</td>";
+                echo "<td>Человек-Человек:".substr($row["result"],1,1)."</td>";
+                echo "<td>Человек-художественный образ:".substr($row["result"],2,1)."</td>";
+                echo "<td>Человек-знаковая система:".substr($row["result"],3,1)."</td>";
+                echo "<td>Человек-техника:".substr($row["result"],4,1)."</td>";
+                echo "<td>ИКТ:".$row["ikt"]."</td>";
+                echo "</tr>";
+                }
+                echo "</table>";
+            } else {
+                echo "0 results";
+            }
+            // while($row = mysqli_fetch_array($result)){
         ?>
        
-        <tr>
-            <td style="padding-right:5px;"><?php echo $row["id"]; ?></td>
-            <td><?php echo $row["iin"]; ?></td>
-            <td><?php echo $row["full_name"]; ?></td>
-            <td><?php echo substr($row["result"],0,1); ?></td>
-            <td><?php echo substr($row["result"],1,1); ?></td>
-            <td><?php echo substr($row["result"],2,1); ?></td>
-            <td><?php echo substr($row["result"],3,1); ?></td>
-            <td><?php echo substr($row["result"],4,1); ?></td>
-            <td><?php echo $row["ikt"]; ?></td>
-        </tr>
-        <?php } ?>
         </table>
     </body>
 </html>
