@@ -33,11 +33,11 @@
                 <th>ID</th>
                 <th>ИИН</th>
                 <th>ФИО</th>
-                <th padding-right:5px;>Человек-Природа</th>
-                <th padding-right:5px;>Человек-Человек</th>
-                <th padding-right:5px;>Человек-художественный образ</th>
-                <th padding-right:5px;>Человек-знаковая система</th>
-                <th padding-right:5px;>Человек-техника</th>
+                <th style="padding-right:5px;">Человек-Природа</th>
+                <th style="padding-right:5px;">Человек-Человек</th>
+                <th style="padding-right:5px;">Человек-художественный образ</th>
+                <th style="padding-right:5px;">Человек-знаковая система</th>
+                <th style="padding-right:5px;">Человек-техника</th>
                 <th>ИКТ</th>
             </tr>
         <?php
