@@ -53,6 +53,17 @@
             while($row = mysqli_fetch_array($result)){
         ?>
         <tr>
+            <th>ID</th>
+            <th>ИИН</th>
+            <th>ФИО</th>
+            <th>Человек-Природа</th>
+            <th>Человек-Человек</th>
+            <th>Человек-художественный образ</th>
+            <th>Человек-знаковая система</th>
+            <th>Человек-техника</th>
+            <th>ИКТ</th>
+        </tr>
+        <tr>
             <td><?php echo $row["id"]; ?></td>
             <td><?php echo $row["iin"]; ?></td>
             <td><?php echo $row["full_name"]; ?></td>
